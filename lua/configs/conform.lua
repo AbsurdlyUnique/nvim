@@ -14,13 +14,8 @@ local options = {
     formatters = {
         ["clang-format"] = {
             prepend_args = {
-                "-style={ \
-                IndentWidth: 4, \
-                TabWidth: 4, \
-                UseTab: Never, \
-                AccessModifierOffset: 0, \
-                IndentAccessModifiers: true, \
-                PackConstructorInitializers: Never}",
+                "--style=file",
+                "--fallback-style=microsoft",
             },
         },
         ["goimports-reviser"] = {
